@@ -173,7 +173,7 @@ set (LIBSBML_FIND_MODULES "${CMAKE_CURRENT_SOURCE_DIR}/CMakeModules/FindLIBSBML.
 # Build static / shared library
 option(BUILD_SHARED_LIBS  "Build shared library. (Set to OFF to build static libraries.)" ON)
 
-if(BUILD_SHARED_LIBS)
+if(NOT BUILD_SHARED_LIBS)
   set(LIBSBML_SKIP_SHARED_LIBRARY ON)
 endif()
 
